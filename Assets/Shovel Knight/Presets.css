@@ -1,0 +1,536 @@
+/* Shovel Knight */
+@container style(--character: Shovel) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shovel Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shovel Knight';
+    --color: #38C0FC;
+  }
+}
+@container style(--character: Shovel-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shovel Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shovel Knight';
+    --color: #38C0FC;
+  }
+}
+@container style(--character: Shovel-Fish) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shovel Knight (Fish Head).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shovel Knight';
+    --color: #38C0FC;
+  }
+}
+@container style(--character: Shovel-Baron) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shovel Knight (Baron).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shovel Knight';
+    --color: #38C0FC;
+  }
+}
+
+
+/* Shield Knight */
+@container style(--character: Shield) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shield Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shield Knight';
+    --color: #FC3800;
+  }
+}
+@container style(--character: Shield-JP) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shield Knight (JP).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shield Knight';
+    --color: #FC3800;
+  }
+}
+@container style(--character: Shield-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Shield Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Shield Knight';
+    --color: #FC3800;
+  }
+}
+
+
+/* Black Knight */
+@container style(--character: Black) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Black Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Black Knight';
+    --color: #AA1000;
+  }
+}
+@container style(--character: Black-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Black Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Black Knight';
+    --color: #AA1000;
+  }
+}
+
+
+/* King Knight */
+@container style(--character: King) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/King Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'King Knight';
+    --color: #FCB800;
+  }
+}
+@container style(--character: King-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/King Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Queen Knight';
+    --color: #FCB800;
+  }
+}
+@container style(--character: King-Ultimate) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/King Knight (Ultimate Supreme).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'King Knight';
+    --color: #FCB800;
+  }
+}
+
+
+/* Specter Knight */
+@container style(--character: Specter) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Specter Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Specter Knight';
+    --color: #DCF878;
+  }
+}
+@container style(--character: Specter-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Specter Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Specter Knight';
+    --color: #DCF878;
+  }
+}
+@container style(--character: Specter-Lich) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Specter Knight (Lich Lord).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Specter Knight';
+    --color: #DCF878;
+  }
+}
+
+
+/* Plague Knight */
+@container style(--character: Plague) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Plague Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Plague Knight';
+    --color: #00B800;
+  }
+}
+@container style(--character: Plague-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Plague Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Plague Knight';
+    --color: #00B800;
+  }
+}
+@container style(--character: Plague-Boomtech) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Plague Knight (Boomtech).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Plague Knight';
+    --color: #00B800;
+  }
+}
+
+
+/* Treasure Knight */
+@container style(--character: Treasure) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Treasure Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Treasure Knight';
+    --color: #94008C;
+  }
+}
+@container style(--character: Treasure-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Treasure Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Treasure Knight';
+    --color: #94008C;
+  }
+}
+
+/* Mole Knight */
+@container style(--character: Mole) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Mole Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Mole Knight';
+    --color: #FC3800;
+  }
+}
+@container style(--character: Mole-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Mole Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Mole Knight';
+    --color: #FC3800;
+  }
+}
+
+
+/* Tinker Knight */
+@container style(--character: Tinker) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Tinker Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Tinker Knight';
+    --color: #008894;
+  }
+}
+@container style(--character: Tinker-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Tinker Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Tinker Knight';
+    --color: #008894;
+  }
+}
+
+
+/* Propeller Knight */
+@container style(--character: Propeller) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Propeller Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Propeller Knight';
+    --color: #94008C;
+  }
+}
+@container style(--character: Propeller-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Propeller Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Propeller Knight';
+    --color: #94008C;
+  }
+}
+
+
+/* Polar Knight */
+@container style(--character: Polar) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Polar Knight.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Polar Knight';
+    --color: #A4E8FC;
+  }
+}
+@container style(--character: Polar-JP) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Polar Knight (JP).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Polar Knight';
+    --color: #A4E8FC;
+  }
+}
+@container style(--character: Polar-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Polar Knight (Bodyswap).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Polar Knight';
+    --color: #A4E8FC;
+  }
+}
+
+
+/* The Enchantress */
+@container style(--character: Enchantress) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/The Enchantress.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'The Enchantress';
+    --color: #DC00D4;
+  }
+}
+@container style(--character: Enchantress-JP) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/The Enchantress (JP).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'The Enchantress';
+    --color: #DC00D4;
+  }
+}
+@container style(--character: Enchantress-Swap) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/The Enchanter.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'The Enchanter';
+    --color: #DC00D4;
+  }
+}
+
+
+/* Mona */
+@container style(--character: Mona) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Mona.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Mona';
+    --color: #58F89C;
+  }
+}
+@container style(--character: Mona-JP) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Mona (JP).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Mona';
+    --color: #58F89C;
+  }
+}
+
+
+/* Reize */
+@container style(--character: Reize) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Reize.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Reize';
+    --color: #FC3800;
+  }
+}
+@container style(--character: Reize-JP) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Reize (JP).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Reize';
+    --color: #FC3800;
+  }
+}
+@container style(--character: Reize-Dark) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Dark Reize.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Reize';
+    --color: #94008C;
+  }
+}
+
+
+/* Baz */
+@container style(--character: Baz) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Baz.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Baz';
+    --color: #008894;
+  }
+}
+@container style(--character: Baz-JP) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Baz (JP).png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Baz';
+    --color: #008894;
+  }
+}
+
+
+/* Mr. Hat */
+@container style(--character: Hat) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Mr. Hat.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Mr. Hat';
+    --color: #FCD884;
+  }
+}
+
+
+/* Phantom Striker */
+@container style(--character: Phantom) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Phantom Striker.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Phantom Striker';
+    --color: #0078FC;
+  }
+}
+
+
+/* Donovan */
+@container style(--character: Donovan) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Donovan.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Donovan';
+    --color: #FC3800;
+  }
+}
+
+
+/* Luan */
+@container style(--character: Luan) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Luan.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Luan';
+    --color: #FC3800;
+  }
+}
+
+
+/* Red */
+@container style(--character: Red) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Red.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Red';
+    --color: #FC3800;
+  }
+}
+
+
+/* Scarlet */
+@container style(--character: Scarlet) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Scarlet.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Scarlet';
+    --color: #FC3800;
+  }
+}
+
+
+/* King Pridemoor */
+@container style(--character: Pridemoor) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/King Pridemoor.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'King Pridemoor';
+    --color: #FC3800;
+  }
+}
+
+
+/* Madam Meeber */
+@container style(--character: Meeber) {
+  .avatar_c19a55 {
+    --portrait: url('../Assets/Shovel Knight/Madam Meeber.png');
+  }
+
+  .messageContent_c19a55 {
+    --name: 'Madam Meeber';
+    --color: #DC00D4;
+  }
+}

@@ -1,0 +1,90 @@
+@import '../Assets/Shovel Knight/Presets.css';
+
+@font-face {
+  font-family: 'SK';
+  src: url('../Fonts/Shovel Knight.ttf') format('truetype');
+}
+
+@container style(--style: SK) {
+  .scroller__36d07 {
+
+    /* Hide username and timestamp */
+    .header_c19a55,
+    .timestamp_c19a55 {
+      display: none;
+    }
+
+    /* Font */
+    .contents_c19a55>.messageContent_c19a55,
+    .embedFull__623de {
+      font-family: 'SK';
+      font-size-adjust: 0.4375;
+      line-height: 12px;
+    }
+
+    /* Portrait */
+    .avatar_c19a55 {
+      position: absolute;
+      top: -2px;
+      left: -48px;
+
+      box-sizing: border-box;
+
+      border: 24px solid transparent;
+      border-image: var(--portrait) 24 round;
+      image-rendering: pixelated;
+    }
+
+    /* Prepend a name to the message */
+    .contents_c19a55>.messageContent_c19a55::before {
+      content: var(--username, var(--name)) ": ";
+      color: var(--color);
+    }
+
+    /* Message text container */
+    .contents_c19a55,
+    .container_b7e1cb {
+      position: relative;
+      left: -8px;
+
+      box-sizing: border-box;
+
+      min-height: 48px;
+      margin-right: -18px;
+      padding: 6px 7px;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        inset: 0px;
+
+        background-color: #000;
+
+        border: 24px solid transparent;
+        border-image: url('../Assets/Shovel Knight/Border.png') 24 round;
+        image-rendering: pixelated;
+      }
+    }
+
+    /* Spacing adjustments */
+    .container_b7e1cb {
+      padding: 8px 7px 4px 7px;
+    }
+
+    .embedFull__623de {
+      margin-bottom: 5px;
+    }
+
+    /* Restore replies */
+    .repliedMessage_c19a55 {
+      font-family: var(--font-primary);
+    }
+
+    /* Hide the boxes if they're empty */
+    .message__5126c:has(.container_b7e1cb):not(:has(.messageContent_c19a55:not(:empty))) .contents_c19a55 {
+      min-height: 0;
+      padding: 0;
+    }
+  }
+}

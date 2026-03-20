@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'RocknRoll One';
+  src: url('../Fonts/RocknRoll One.ttf') format('truetype');
+}
+
+@container style(--style: HoL) {
+  .scroller__36d07 {
+
+    /* Hide avatar and timestamp */
+    .avatar_c19a55,
+    .timestamp_c19a55 {
+      display: none;
+    }
+
+    /* Font */
+    .header_c19a55,
+    .contents_c19a55>.messageContent_c19a55,
+    .embedFull__623de {
+      font-family: 'RocknRoll One';
+      font-size-adjust: 0.5;
+      text-shadow: 0px 2px #000;
+    }
+
+    /* Header box */
+    .header_c19a55 {
+      display: inline-block;
+
+      padding: 0 10px 1px 13px;
+
+      text-align: center;
+
+      background-color: var(--color, #237411AA);
+      border-radius: 5px;
+    }
+
+    /* Remove role color */
+    .headerText_c19a55>.username_c19a55 {
+      color: #fff !important;
+    }
+
+    /* Message text container */
+    .contents_c19a55>.messageContent_c19a55,
+    .container_b7e1cb {
+      display: flex;
+      align-items: center;
+      left: 61px;
+
+      min-height: 90px;
+      margin-top: 1px;
+      margin-right: 51px;
+      padding: 0 44px;
+
+      background-color: rgba(0, 0, 0, 0.71);
+      border-radius: 15px;
+
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    
+
+    /* Restore replies */
+    .repliedMessage_c19a55 {
+      font-family: var(--font-primary);
+      font-size-adjust: none;
+      text-shadow: none;
+    }
+
+    /* Fix code block width */
+    pre {
+      display: block;
+      width: 100%;
+    }
+
+    /* Spacing adjustments */
+    .contents_c19a55 {
+      margin-left: -45px;
+    }
+
+    .container_b7e1cb {
+      justify-content: center;
+      left: -56px;
+
+      margin-top: 2px;
+      margin-right: -66px;
+      padding: 10px 44px;
+    }
+
+    .visualMediaItemContainer_f4758a {
+      width: auto;
+      padding: 10px 5px 8px 0;
+    }
+
+    /* Hide the boxes if they're empty */
+    .message__5126c:has(.container_b7e1cb):not(:has(.messageContent_c19a55:not(:empty))) .messageContent_c19a55 {
+      display: none;
+    }
+
+    .message__5126c:has(.container_b7e1cb):not(:has(.container_b7e1cb:not(:empty))) .container_b7e1cb {
+      display: none;
+    }
+  }
+}

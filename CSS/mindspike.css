@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../Fonts/Space Mono.woff2');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-weight: bold;
+  src: url('../Fonts/Space Mono (Bold).woff2');
+}
+
+@font-face {
+  font-family: 'Libre Barcode 128';
+  src: url('../Fonts/Libre Barcode 128.woff2');
+}
+
+@container style(--style: mindspike) {
+  .scroller__36d07 {
+    
+    /* Avatar */
+    .avatar_c19a55 {
+      left: -56px;
+
+      width: 56px;
+      height: 56px;
+      margin: 0;
+      box-sizing: border-box;
+
+      border: 1px solid aqua;
+      border-radius: 0;
+    }
+
+    .avatar_c19a55:hover {
+      border-color: yellow;
+    }
+
+    .mentioned__5126c .avatar_c19a55 {
+      border: 1px dashed yellow;
+    }
+
+    /* Header */
+    .header_c19a55 {
+      margin-bottom: 4px;
+      padding: 0 0 0.3rem 8px;
+
+      border-bottom: 1px solid aqua;
+
+      overflow: visible !important;
+    }
+
+    .mentioned__5126c .header_c19a55 {
+      border: 1px dashed yellow;
+    }
+
+    .headerText_c19a55>.username_c19a55 {
+      vertical-align: top;
+
+      font-family: 'Libre Barcode 128' !important;
+      font-size: 2.2rem;
+      line-height: 1em;
+
+      overflow: visible !important;
+    }
+
+    .username_c19a55:hover {
+      color: white !important;
+      text-decoration: none !important;
+    }
+
+    .timestamp_c19a55 {
+      left: -56px !important;
+
+      font-size-adjust: 0.55;
+    }
+
+    /* Message Box */
+    .message__5126c {
+      margin: 0 1% 0 1.2%;
+      padding-right: 0 !important;
+
+      font-family: 'Space Mono';
+
+      background: black !important;
+
+      border-style: solid;
+      border-left-width: 1px;
+      border-right-width: 1px;
+      border-color: aqua;
+
+      opacity: 1 !important;
+    }
+
+    .mentioned__5126c {
+      border-style: dashed;
+      border-color: yellow;
+
+      background: black !important;
+
+      box-shadow: 0px 0px 15px yellow;
+
+      opacity: 1 !important;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .contents_c19a55 {
+      position: relative !important;
+    }
+
+    /* Message Text */
+    .messageContent_c19a55 {
+      margin: 0 !important;
+      padding: 0 8px !important;
+
+      color: aqua;
+
+      font-size-adjust: 0.4;
+
+      overflow: visible !important;
+    }
+
+    .markup__75297 {
+      line-height: 1.25em;
+    }
+
+    /* Spoilers */
+    .spoilerMarkdownContent__299eb {
+      padding: 0 2px;
+
+      border: 1px solid aqua;
+      border-radius: 0;
+    }
+
+    /* Code Blocks */
+    .codeContainer__75297 code {
+      border: 1px solid magenta;
+      border-radius: 0;
+
+      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('../Assets/mindspike/corrurippletran.gif') !important;
+
+      font-size-adjust: 0.55;
+    }
+
+    .markup__75297 .inline {
+      margin: 2px 2px;
+      padding: 0 2px;
+
+      color: magenta;
+
+      border: 1px dashed magenta;
+      border-radius: 0;
+
+      font-size-adjust: 0.55;
+    }
+
+    .spoilerMarkdownContent__299eb.hidden__299eb {
+      background: aqua;
+    }
+
+    .embedFull__623de,
+    .visualMediaItemContainer_f4758a {
+      margin-left: 0.7%;
+    }
+
+    /* Embeds */
+    .embedTitle__623de {
+      font-family: "barcodetext" !important;
+      font-size: 2.2rem;
+      font-weight: normal;
+      line-height: 1;
+
+      overflow: visible;
+    }
+
+    .embedFull__623de {
+      border: 1px dashed;
+      border-left: 4px solid;
+      border-left-color: none;
+    }
+
+    .embedWrapper_b7e1cb:not(:has(.embedWrapper_b7e1cb > *)) {
+      border: 1px dashed;
+      border-color: yellow !important;
+    }
+
+    .nonVisualMediaItem_f4758a {
+      border: 1px dashed;
+      border-color: yellow;
+    }
+
+    /* Spacing adjustments */
+    .groupStart__5126c {
+      margin-top: 8px !important;
+      padding-top: 12px !important;
+
+      border-top-width: 1px;
+    }
+
+    li:has(+ * .groupStart__5126c,
+      + :not(li, .isUnread__908e2:not(.beforeGroup__5126c), .backgroundFlash__5126c)) .message__5126c {
+      margin-bottom: 8px !important;
+      padding-bottom: 8px !important;
+
+      border-bottom-width: 1px;
+    }
+
+    /* Removes all rounding */
+    .container_b7e1cb * {
+      border-radius: 0 !important;
+    }
+  }
+}

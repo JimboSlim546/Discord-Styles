@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Orange Kid';
+  src: url('../Fonts/Orange Kid.otf') format('opentype');
+}
+
+@container style(--style: M3) {
+  .scroller__36d07 {
+
+    /* Hides avatar and timestamp */
+    .avatar_c19a55,
+    .timestamp_c19a55 {
+      display: none;
+    }
+
+    /* Font */
+    .header_c19a55,
+    .contents_c19a55 {
+      font-family: 'Orange Kid';
+      font-size-adjust: 0.7;
+    }
+
+    /* Header box */
+    .header_c19a55 {
+      position: absolute;
+      top: -24px;
+      left: 16px;
+
+      padding: 0 14px 4px 8px;
+
+      box-sizing: border-box;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        inset: 0px;
+
+        margin-top: 1px;
+        
+        background-color: #848284;
+        background-clip: padding-box;
+        
+        border: 10px solid transparent;
+        border-image: url('../Assets/Mother 3/Border.png') 5 round;
+        image-rendering: pixelated;
+      }
+    }
+
+    /* Remove role color */
+    .headerText_c19a55>.username_c19a55 {
+      color: #fff !important;
+    }
+
+    /* Prepend a bullet point to the message */
+    .contents_c19a55>.messageContent_c19a55::before {
+      content: "• ";
+    }
+
+    /* Message text container */
+    .contents_c19a55>.messageContent_c19a55 {
+      min-height: 56px;
+      left: 16px;
+
+      margin-right: 6px;
+      padding: 3px 26px 0 26px;
+
+      background-color: #000;
+    }
+
+    .container_b7e1cb {
+      left: -56px;
+      
+      margin-right: -66px;
+      padding: 5px 26px;
+
+      background-color: #000;
+    }
+
+
+    /* Remove bullet point */
+    .message__5126c:has(.blockquoteContainer__75297, .codeContainer__75297) .messageContent_c19a55::before {
+      content: none;
+    }
+
+    /* Restore replies */
+    .repliedMessage_c19a55,
+    .reactions__23977 {
+      font-family: var(--font-primary);
+      font-size-adjust: none;
+    }
+
+    /* Restore code blocks */
+    .codeContainer__75297 {
+      font-size-adjust: none;
+      padding-bottom: 5px;
+    }
+
+    .markup__75297 .inline {
+      font-size-adjust: none;
+    }
+
+    /* Spacing adjustments */
+    .groupStart__5126c {
+      margin-top: 34px !important;
+    }
+
+    .message__5126c:has(.headerText_c19a55):has(.repliedMessage_c19a55) {
+      .header_c19a55 {
+        top: -2px;
+      }
+
+      .repliedMessage_c19a55 {
+        top: -25px;
+      }
+    }
+
+    .message__5126c:has(.visualMediaItemContainer_f4758a):has(.messageContent_c19a55:not(:empty)) .contents_c19a55>.messageContent_c19a55 {
+      min-height: 25px;
+    }
+
+    /* Hide the boxes if they're empty */
+    .message__5126c:has(.container_b7e1cb):not(:has(.messageContent_c19a55:not(:empty))) .messageContent_c19a55 {
+      display: none !important;
+    }
+
+    .message__5126c:has(.container_b7e1cb):not(:has(.container_b7e1cb:not(:empty))) .container_b7e1cb {
+      display: none !important;
+    }
+  }
+}
+
+@container style(--style: M3) and style(--avatar: true) {
+  .scroller__36d07 {
+
+    /* Enlarges avatar and adjusts spacing accordingly */
+    .avatar_c19a55 {
+      display: block;
+      width: auto;
+      height: 83px;
+      top: -24px;
+      border-radius: 0;
+    }
+
+    .message__5126c:has(.avatar_c19a55) {
+
+      .header_c19a55,
+      .contents_c19a55>.messageContent_c19a55,
+      .container_b7e1cb {
+        padding-left: 90px;
+      }
+    }
+
+    .message__5126c:has(.avatar_c19a55):has(.repliedMessage_c19a55) .avatar_c19a55 {
+      top: 0px;
+    }
+  }
+}
