@@ -31,7 +31,7 @@
       box-sizing: border-box;
 
       border: 24px solid transparent;
-      border-image: var(--portrait) 24 round;
+      border-image: var(--portrait, url('../Assets/Shovel Knight/Shovel Knight.png')) 24 round;
       image-rendering: pixelated;
     }
 

@@ -15,6 +15,7 @@
     /* Font */
     .header_c19a55,
     .contents_c19a55>.messageContent_c19a55,
+    .content__122e4>.messageContent_c19a55,
     .embedFull__623de {
       font-family: 'RocknRoll One';
       font-size-adjust: 0.5;
@@ -40,9 +41,11 @@
 
     /* Message text container */
     .contents_c19a55>.messageContent_c19a55,
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
       left: 61px;
 
       min-height: 90px;
@@ -50,14 +53,12 @@
       margin-right: 51px;
       padding: 0 44px;
 
-      background-color: rgba(0, 0, 0, 0.71);
+      background-color: #000000B5;
       border-radius: 15px;
 
       overflow-wrap: break-word;
       word-break: break-word;
     }
-
-    
 
     /* Restore replies */
     .repliedMessage_c19a55 {
@@ -70,6 +71,9 @@
     pre {
       display: block;
       width: 100%;
+
+      padding-top: 4px;
+      padding-bottom: 10px;
     }
 
     /* Spacing adjustments */
@@ -77,7 +81,7 @@
       margin-left: -45px;
     }
 
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       justify-content: center;
       left: -56px;
 
@@ -86,17 +90,30 @@
       padding: 10px 44px;
     }
 
-    .visualMediaItemContainer_f4758a {
-      width: auto;
-      padding: 10px 5px 8px 0;
+    .content__122e4>.container_b7e1cb {
+      left: 0;
+
+      margin-left: 0;
+    }
+
+    .markup__75297 .inline {
+      margin: 5px 0;
+    }
+
+    .nonVisualMediaItemContainer_f4758a {
+      margin-top: 0;
     }
 
     /* Hide the boxes if they're empty */
-    .message__5126c:has(.container_b7e1cb):not(:has(.messageContent_c19a55:not(:empty))) .messageContent_c19a55 {
+    .message__5126c:has(.container_b7e1cb):has(.messageContent_c19a55:empty) .contents_c19a55>.messageContent_c19a55 {
       display: none;
     }
 
-    .message__5126c:has(.container_b7e1cb):not(:has(.container_b7e1cb:not(:empty))) .container_b7e1cb {
+    .message__5126c:has(.container_b7e1cb):has(.container_b7e1cb:empty) .container_b7e1cb {
+      display: none;
+    }
+
+    .message__5126c:has(.container__122e4):has(.messageContent_c19a55:empty) .contents_c19a55>.messageContent_c19a55 {
       display: none;
     }
   }
