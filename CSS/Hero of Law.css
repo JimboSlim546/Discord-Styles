@@ -90,12 +90,6 @@
       padding: 10px 44px;
     }
 
-    .content__122e4>.container_b7e1cb {
-      left: 0;
-
-      margin-left: 0;
-    }
-
     .markup__75297 .inline {
       margin: 5px 0;
     }
@@ -104,16 +98,21 @@
       margin-top: 0;
     }
 
+    /* Remove box if it only contains reactions */
+    .message__5126c:has(.container_b7e1cb> .reactions__23977:only-child) .container_b7e1cb {
+      min-height: revert;
+      margin: revert;
+      padding: revert;
+      
+      background: none;
+    }
+
     /* Hide the boxes if they're empty */
     .message__5126c:has(.container_b7e1cb):has(.messageContent_c19a55:empty) .contents_c19a55>.messageContent_c19a55 {
       display: none;
     }
 
     .message__5126c:has(.container_b7e1cb):has(.container_b7e1cb:empty) .container_b7e1cb {
-      display: none;
-    }
-
-    .message__5126c:has(.container__122e4):has(.messageContent_c19a55:empty) .contents_c19a55>.messageContent_c19a55 {
       display: none;
     }
   }
