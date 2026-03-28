@@ -46,11 +46,6 @@
       }
     }
 
-    /* Username color override */
-    .headerText_c19a55>.username_c19a55 {
-      color: var(--color) !important;
-    }
-
     /* Prepend a bullet point to the message */
     .contents_c19a55>.messageContent_c19a55::before {
       content: "• ";
