@@ -43,7 +43,7 @@
 
     /* Message text container */
     .contents_c19a55,
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       position: relative;
       left: -8px;
 
@@ -68,7 +68,7 @@
     }
 
     /* Spacing adjustments */
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       padding: 8px 7px 4px 7px;
     }
 
@@ -82,7 +82,7 @@
     }
 
     /* Hide the boxes if they're empty */
-    .message__5126c:has(.container_b7e1cb):not(:has(.messageContent_c19a55:not(:empty))) .contents_c19a55 {
+    .message__5126c:has(.container_b7e1cb):has(.messageContent_c19a55:empty) .contents_c19a55>.messageContent_c19a55 {
       min-height: 0;
       padding: 0;
     }

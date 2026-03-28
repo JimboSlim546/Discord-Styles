@@ -85,7 +85,7 @@
     }
 
     /* Remove box if it only contains reactions */
-    .message__5126c:has(.container_b7e1cb> .reactions__23977:only-child) .container_b7e1cb {
+    .message__5126c:has(.container_b7e1cb>.reactions__23977:only-child) .container_b7e1cb {
       min-height: revert;
       margin: revert;
       padding: revert;

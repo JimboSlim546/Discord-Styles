@@ -46,9 +46,9 @@
       }
     }
 
-    /* Remove role color */
+    /* Username color override */
     .headerText_c19a55>.username_c19a55 {
-      color: #fff !important;
+      color: var(--color) !important;
     }
 
     /* Prepend a bullet point to the message */
@@ -65,6 +65,8 @@
       padding: 3px 26px 0 26px;
 
       background-color: #000;
+
+      line-height: 32px;
     }
 
     .message__5126c>.container_b7e1cb {
@@ -74,6 +76,8 @@
       padding: 5px 26px;
 
       background-color: #000;
+      
+      line-height: 32px;
     }
 
 
@@ -153,5 +157,13 @@
     .message__5126c:has(.avatar_c19a55):has(.repliedMessage_c19a55) .avatar_c19a55 {
       top: 0px;
     }
+  }
+}
+
+@container style(--style: M3) and style(--color) {
+
+  /* Username color override */
+  .headerText_c19a55>.username_c19a55 {
+    color: var(--color) !important;
   }
 }
