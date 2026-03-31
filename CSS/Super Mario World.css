@@ -6,39 +6,21 @@
 @container style(--style: SMW) {
   .scroller__36d07 {
 
-    /* Hide avatar */
-    .avatar_c19a55 {
+    /* Hide avatar, role icon, and timestamp */
+    .avatar_c19a55,
+    .roleIcon_c19a55,
+    .timestamp_c19a55,
+    .isUnread__908e2 {
       display: none;
     }
 
-    /* Hide timestamp if not first message */
-    .message__5126c:not(:has(.avatar_c19a55)) .timestamp_c19a55 {
-      display: none;
-    }
-
-    /* A dumb workaround from not being able to replace the avatar */
-    /* Hide timestamp, insert Luigi and adjust spacing */
-    .header_c19a55>.timestamp_c19a55 {
-      width: 50px;
-      height: 31px;
-      margin-top: 7px;
-      margin-left: -143px;
-      margin-bottom: 2px;
-
-      background-image: url('../Assets/Super Mario World/Luigi.gif');
-
-      color: #00000000;
-    }
-
-    /* Move header to the right of the timestamp */
     .header_c19a55 {
       display: flex;
-      align-items: end;
+      align-items: flex-end;
 
-      height: fit-content;
       margin: 0px -17px;
 
-      border-image-source: url('../Assets/Super Mario World/Border-Top.png');
+      border-image-source: url('./Assets/Super Mario World/Border-Top.png');
       border-image-slice: 40 17 0 17;
       border-image-width: 40px 17px 0px 17px;
       border-image-repeat: repeat;
@@ -47,20 +29,29 @@
       font-size-adjust: calc(7/22);
     }
 
+    /* Workaround from not being able to replace the avatar */
+    .headerText_c19a55 {
+      height: 31px;
+      margin-top: 7px;
+      margin-left: 30px;
+      margin-bottom: 2px;
+
+      background-image: url('./Assets/Super Mario World/Luigi.gif');
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
     .headerText_c19a55>.username_c19a55 {
-      margin-left: 88px;
+      top: 17px;
+      margin-left: 58px;
 
       color: black !important;
       text-transform: uppercase;
     }
 
-    .headerText_c19a55 {
-      margin-bottom: -6px;
-    }
-
     /* Message text container */
     .contents_c19a55,
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       border-style: solid;
       border-width: 0px 17px 0px 17px;
 
@@ -69,7 +60,6 @@
       border-image-width: 0px 17px 0px 17px;
       border-image-repeat: repeat;
     }
-
 
     /* Spacing adjustments */
     .groupStart__5126c {
@@ -82,7 +72,7 @@
     }
 
     .contents_c19a55,
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       margin-left: -56px;
       margin-right: -10px;
     }
@@ -92,7 +82,7 @@
     }
 
     .contents_c19a55>.messageContent_c19a55,
-    .container_b7e1cb {
+    .message__5126c>.container_b7e1cb {
       padding: 5px 10px;
     }
 
@@ -104,12 +94,12 @@
         border-image-width: 0px 17px 18px 17px;
       }
 
-      .message__5126c:has(.container_b7e1cb:not(:empty)) .container_b7e1cb {
+      .message__5126c:has(.container_b7e1cb:not(:empty)) .message__5126c>.container_b7e1cb {
         border-bottom-width: 18px;
         border-image-width: 0px 17px 18px 17px;
       }
 
-      .message__5126c:has(.container_b7e1cb):has(.messageContent_c19a55:empty) .container_b7e1cb {
+      .message__5126c:has(.container_b7e1cb):has(.messageContent_c19a55:empty) .message__5126c>.container_b7e1cb {
         border-bottom-width: 18px;
         border-image-width: 0px 17px 18px 17px;
       }
