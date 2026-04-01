@@ -81,6 +81,15 @@
       font-family: var(--font-primary);
     }
 
+    /* Remove box if it only contains reactions */
+    .message__5126c:has(.container_b7e1cb>.reactions__23977:only-child) .container_b7e1cb {
+      min-height: revert;
+      margin: revert;
+      padding: revert;
+      
+      background: none;
+    }
+
     /* Hide the boxes if they're empty */
     .message__5126c:has(.container_b7e1cb):has(.messageContent_c19a55:empty) .contents_c19a55>.messageContent_c19a55 {
       min-height: 0;
